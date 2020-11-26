@@ -8,6 +8,8 @@ class TestBouqtique(BaseClass):
 
     def test_boutique_page(self):
         page = BoutiquePage(self.driver)
+        log = self.getLogger()
+        log.info("Selecting boutique randomly")
         page.randSection().click()
         sleep(1)
         page.boutiqueClick().click()
