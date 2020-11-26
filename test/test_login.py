@@ -11,8 +11,8 @@ class TestLogin(BaseClass):
         home = HomePage(self.driver)
         login = home.loginPageClick()
         sleep(2)
-        login.getMail().send_keys("gmakas53@gmail.com")
-        login.getPass().send_keys("12301230SSra")
+        login.getMail().send_keys()
+        login.getPass().send_keys()
         login.loginButton().click()
 
         sleep(2)
